@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "studycard-251e3": {
+      "hosting": {
+        "studycard-manager2": [
+          "studycard-251e3"
+        ]
+      }
+    }
+  }
+}
