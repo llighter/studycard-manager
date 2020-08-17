@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -15,6 +16,7 @@ import { SharedModule } from "./shared/shared.module";
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatInputModule } from "@angular/material/input";
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
@@ -28,6 +30,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { DashboardTableComponent } from './dashboard/dashboard-table/dashboard-table.component';
 import { MilisecToDatePipe } from './pipes/milisec-to-date.pipe';
+import { CardComponent } from './card/card.component';
+import { CardFormComponent } from './card/card-form/card-form.component';
 
 @NgModule({
   declarations: [
@@ -36,13 +40,18 @@ import { MilisecToDatePipe } from './pipes/milisec-to-date.pipe';
     DashboardComponent,
     DashboardTableComponent,
     MilisecToDatePipe,
+    CardComponent,
+    CardFormComponent,
   ],
   imports: [
     BrowserModule
+    , FormsModule
     , SharedModule
     , AppRoutingModule
+    , ReactiveFormsModule
     , MatIconModule
     , MatListModule
+    , MatInputModule
     , MatCardModule
     , MatDialogModule
     , MatButtonModule

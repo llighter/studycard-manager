@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>New Card</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="cardForm" (ngSubmit)="createCard()" class="example-form">
+            <mat-form-field class="example-full-width">
+                <mat-label>question</mat-label>
+                <textarea matInput formControlName="question" (select)="setBlind($event)" #questionRef></textarea>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="answer" formControlName="answer">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="source" formControlName="source">
+            </mat-form-field>
+
+            <div mat-dialog-actions class="example-button-row">
+                <button mat-raised-button color="primary" [disabled]="cardForm.invalid" type="submit">
+                    Create
+                </button>
+                <button mat-raised-button color="warn" type="reset" (click)="setFocus()">
+                    Clear
+                </button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

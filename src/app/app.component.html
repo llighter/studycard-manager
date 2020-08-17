@@ -5,13 +5,13 @@
       [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['table-page']" (click)="drawer.close()">
+      <a mat-list-item [routerLink]="['dashboard']" (click)="drawer.close()">
         <i class="material-icons">
           table_chart
         </i>
         Cards Table
       </a>
-      <a mat-list-item [routerLink]="['card-page']" (click)="drawer.close()">
+      <a mat-list-item [routerLink]="['card']" (click)="drawer.close()">
         <i class="material-icons">
           insert_drive_file
         </i>
