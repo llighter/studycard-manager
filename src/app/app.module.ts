@@ -32,6 +32,8 @@ import { DashboardTableComponent } from './dashboard/dashboard-table/dashboard-t
 import { MilisecToDatePipe } from './pipes/milisec-to-date.pipe';
 import { CardComponent } from './card/card.component';
 import { CardFormComponent } from './card/card-form/card-form.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ProfileFormComponent } from './profile/profile-form/profile-form.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { CardFormComponent } from './card/card-form/card-form.component';
     MilisecToDatePipe,
     CardComponent,
     CardFormComponent,
+    ProfileComponent,
+    ProfileFormComponent,
   ],
   imports: [
     BrowserModule
