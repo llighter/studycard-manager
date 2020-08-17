@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "dist",
+    "target": "studycard-manager",
+    "public": "dist/studycard-manager2",
     "ignore": [
       "firebase.json",
       "**/.*",
