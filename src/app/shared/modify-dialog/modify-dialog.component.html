@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Update </h1>
+<div mat-dialog-content>
+    <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="question" [(ngModel)]="data.question"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="answer" [(ngModel)]="data.answer">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="source" [(ngModel)]="data.source">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions class="example-button-row">
+    <button mat-button (click)="onNoClick()" color="warn">Cancel</button>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial color="primary">Update</button>
+</div>
